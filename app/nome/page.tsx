@@ -2,7 +2,7 @@
 
 
 export default async function ShowName(){
-    const baseUrl = process.env.BASE_URL || "http://localhost:3000";
+    const baseUrl = process.env.URL || "http://localhost:3000";
 
     const res = await fetch(`${baseUrl}/api/getname`, {cache: 'no-store'})
 
